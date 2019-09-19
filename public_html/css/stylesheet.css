@@ -1,5 +1,30 @@
 h1 {
-	color: red;
+	font-family: Aldrich;
+	text-align: center;
+}
+
+body {
+	
+}
+
+/* Code found on https://css-tricks.com/snippets/css/transparent-background-images/ */
+body::after {
+ 	content: "";
+ 	background-image: url("https://media.istockphoto.com/photos/hand-turning-wall-light-switch-off-picture-id484990548?k=6&m=484990548&s=612x612&w=0&h=5bYpJci2DTivlFXEchteB8tDt92FoRfVqyMT0yetVUE=");
+ 	background-color: #cccccc;
+	background-repeat: no-repeat; 
+	background-size: cover;
+ 	opacity: 0.5;
+ 	top: 0;
+ 	left: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	position: fixed;
+ 	z-index: -1;   
+}
+
+header img{
+	float left;
 }
 
 nav ul {
@@ -7,7 +32,9 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #a1a1a1;
+	border-style: double;
+	border-color: #515151;
 }
 
 nav li {
@@ -17,11 +44,18 @@ nav li {
 nav li a {
 	display: block;
 	color: white;
+	font-family: "Aldrich";
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 16px;
 	text-decoration: none;
 }
 
-nav li a:hover {
+nav li a:hover:not(.active) {
 	background-color: #111;
+	color: white;
+}
+
+.active {
+	background-color: #f1f1f1;
+	color: black;
 }
