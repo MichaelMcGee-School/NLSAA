@@ -1,0 +1,73 @@
+h1 {
+    font-family: arial;
+    text-align: center;
+    color:#0D0D0D;
+    background-color:#5C73F2;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: arial;
+    text-align: center;
+    color: #0D0D0D;
+    background-color:#5C73F2; 
+    font-size: 30px;
+}
+
+p {
+    font-family: arial;
+    text-align: center;
+    font-size: 20px;
+}
+
+.th {
+    color: coral;
+}
+
+#review {
+    background-color: coral;
+}
+#firstreview {
+    background-color: coral;
+}
+#secondreview {
+    background-color: coral;
+}
+#thirdreview {
+    background-color: coral;
+}
+#fourthreview {
+    background-color: coral;
+}
+
+ul {
+    font-family: arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #82B8D9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    margin: auto;
+    color: #000;
+    padding: 14px 35px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:#6B8DF2;
+    color: white;
+}
+
+form {
+    border-bottom: 6px solid coral;
+    background-color: lightgrey;
+}
+
