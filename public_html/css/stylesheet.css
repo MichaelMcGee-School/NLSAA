@@ -71,3 +71,10 @@ form {
     background-color: lightgrey;
 }
 
+table, th, td {
+        border: 1px solid coral;
+}
+
+th {
+    text-align: left;
+}
