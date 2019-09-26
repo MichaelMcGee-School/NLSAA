@@ -1,0 +1,99 @@
+h1 {
+	text-align: center;
+	color: black;
+	text-shadow: 3px 2px #166FCC;
+	font-family: "Impact", Charcoal, sans-serif;
+}
+body {
+	background-color: #7594FF;
+}
+h2 {
+	text-align: left;
+	color:black;
+	text-shadow: 3px 2px #166FCC;
+	font-family: Georgia, serif;
+}
+p {
+	text-align: left;
+	text-indent: 40px;
+	border: 1px solid black;
+	outline-style: outset;
+	outline-color: #B6CC16;
+	background: #FFDD36;
+}
+ul {
+	list-style-type: none;
+	margin: -10px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #E1E1E1;
+	border-bottom: 1px solid white;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: #101010;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+a {
+	text-decoration: none;
+	font-family: Georgia, serif;
+	color: black;
+}
+li a:hover:not(.active) {
+	background-color: #F1F1F1;
+	text-shadow: 2px 1px #8AD6E3;
+}
+.active {
+	background-color: #FFDD36;
+}
+ol {
+	text-indent: 40px;
+	list-style-type: none;
+	margin: 10px;
+	padding: 5px;
+	background-color: #E1E1E1;
+	border-bottom: 1px solid white;
+}
+.table {
+	text-indent: 20px;
+	font-family: Georgia, serif;
+}
+div.gallery img {
+  width: 15%;
+  height: auto;
+  float: center;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid white;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  text-align: center;
+}
+header {
+	align-items: center;
+}
+em {
+	color:black;
+	text-shadow: 3px 2px #166FCC;
+	font-family: Georgia, serif;
+	font-size: 30px;
+	padding: 20px;
+}
+table {
+	margin: 25px;
+}
+tr {
+	padding: 20px;
+	text-align: center;
+}
+img {
+	float: center;
+}
