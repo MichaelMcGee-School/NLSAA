@@ -1,26 +1,45 @@
-h1 {
+header h1 {
 	font-family: Aldrich;
 	text-align: center;
+	text-shadow: 2px 2px #B34400;
 	border-style: ridge;
-	border-color: #FFE866;
-	background-color: black;
-	color: #FFE866;
+	border-color: #B34400;
+	background-color: #2C3531;
+	color: #D1E8E2;
 	margin: 20px 200px;
 	padding: 5px;
 }
 
-body {
-	background-color: #94997A;
+#switchy {
+	float: left;
+	margin-left: 50px;
+	margin-top: -85px;
 }
 
-/* Code found on https://css-tricks.com/snippets/css/transparent-background-images/ */
-body::after {
+#bulby {
+	float: right;
+	margin-right: 50px;
+	margin-top: -85px;
+}
+
+.gallery {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*-----------------Background-----------------*/
+body {
+	background-color: #116466;
+}
+
+body::after { /* Code found on https://css-tricks.com/snippets/css/transparent-background-images/ */
  	content: "";
- 	background-image: url("https://media.istockphoto.com/photos/hand-turning-wall-light-switch-off-picture-id484990548?k=6&m=484990548&s=612x612&w=0&h=5bYpJci2DTivlFXEchteB8tDt92FoRfVqyMT0yetVUE=");
- 	background-color: #cccccc;
+ 	background-image: url("../pictures/switchy_bulby_background.png");
+ 	background-position: center;
 	background-repeat: no-repeat; 
 	background-size: cover;
- 	opacity: 0.5;
+ 	opacity: 0.25;
  	top: 0;
  	left: 0;
  	bottom: 0;
@@ -29,18 +48,15 @@ body::after {
  	z-index: -1;   
 }
 
-header img{
-	float left;
-}
-
+/*------------Navigation Bar--------------*/
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: black;
+	background-color: #2C3531;
 	border-style: ridge;
-	border-color: #FFE866;
+	border-color: #B34400;
 }
 
 nav li {
@@ -49,7 +65,7 @@ nav li {
 
 nav li a {
 	display: block;
-	color: #FFE866;
+	color: #D1E8E2;
 	font-family: "Aldrich";
 	text-align: center;
 	padding: 10px 16px;
@@ -57,42 +73,54 @@ nav li a {
 }
 
 nav li a:hover:not(.active) {
-	background-color: #94997A;
-	color: white;
+	background-color: #B34400;
+	color: #D1E8E2;
 }
 
 .active {
-	background-color: #FFE866;
-	color: black;
+	background-color: #D1E8E2;
+	color: #2C3531;
 }
 
+
+/*-----------Sections-------------*/
 section {
-	background-color: white;
-	color: black;
+	background-color: #D1E8E2;
+	color: #2C3531;
 	border-style: ridge;
+	border-color: #2C3531;
 	margin: 10px 10px; 
 	padding: 10px 10px;
 }
 
+
+/*-----------Tables-------------*/
 table {
 	border-collapse: collapse;
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-
+	color: #2C3531;
 }
 
 th {
 	height: 30px;
 	font-weight: bold;
 	font-size: 20px;
-	background-color: #bbbbbb;
+	background-color: #B34400;
 }
 
 th, td {
-	border-bottom: 1px solid #bbbbbb;
+	border: 1px solid #B34400;
 }
 
-tr:hover {
-	background-color: #f2f2f2;
+
+/*-------------Footer-------------*/
+footer {
+	text-align: center;
+	color: #D1E8E2;
+}
+
+hr {
+	border: 1px solid #B34400;
 }

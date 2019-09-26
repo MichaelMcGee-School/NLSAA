@@ -6,10 +6,22 @@
    <title>NLSAA - Home Page</title>
    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+   <style>
+      h2 {
+        text-align: center;
+        text-shadow: 2px 2px #B34400;
+        font-size: 32px;
+      }
+      form {
+        text-align: center;
+      }
+   </style>
  </head>
  <body>
 	 <header>
-		 <h1>National Light Switch Appreciation Association</h1>
+		 <h1 style="text-decoration-line: underline; text-decoration-style: wavy;">
+        National Light Switch Appreciation Association
+      </h1>
 		 <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
 		 <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
 	 </header>
@@ -75,10 +87,16 @@
        or when we would rather go to sleep, where personal injuries
        are significantly less likely.</p>
      </article>
-	 
-	 <p>This text will replace the other text in a merge conflict</p>
-	 
+     <article>
+      <h2>Log in</h2>
+        <form>
+          Username: <input type="text" name="First Name" required maxlength="15"><br><br>
+          Password: <input type="Password" name="Last Name" required maxlength="20"><br><br>
+          <input type="submit" name="Submit" value="Log in">
+        </form>
+      </article>
    </section>
+
    <hr>
    <footer>
        NLSAA - Cabot Brothers &copy; 2019
