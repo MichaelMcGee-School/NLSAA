@@ -1,190 +1,199 @@
 <!DOCTYPE html>
 
 <html lang="en">
- <head>
-   <meta charset="utf-8">
-   <title>NLSAA - Reviews</title>
-   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-   <style>
-      h2 {
-        text-align: center;
-      }
+ 	<head>
+   	<meta charset="utf-8">
+   	<title>NLSAA - Reviews</title>
+   	<!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      table {
-        border-collapse: collapse;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        color: #2C3531;
-      }
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-      td {
-        border: none;
-        padding: 10px;
-        text-align: left;
-      }
-   </style>
- </head>
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
+ 	</head>
 
- <body>
-     <header>
-         <h1>National Light Switch Appreciation Association</h1>
-         <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-         <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
-     </header>
+ 	<body>
+		<header>
+			<h1>National Light Switch Appreciation Association</h1>
+			<img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+			<img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+		</header>
     
-   <nav>
-     <ul>
-       <li>
-         <a href="index.html">Home Page</a>
-       </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NLSAA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-       <li>
-         <a href="about.html">About</a>
-       </li>
+      <div class="collapse navbar-collapse" id="navbarColor02">
 
-       <li>
-         <a href="history.html">History</a>
-       </li>
-      
-       <li>
-         <a href="how_to.html">How To Use a Light Switch</a>
-       </li>
-      
-       <li>
-         <a href="vendors.html">Vendors</a>
-       </li>
-      
-       <li>
-         <a class="active" href="reviews.html">Reviews</a>
-       </li>
-      
-       <li>
-         <a href="contractors.html">Contractors</a>
-       </li>
-      
-       <li>
-         <a href="gallery.html">Gallery</a>
-       </li>
-      
-       <li>
-         <a href="contact.html">Contact Us</a>
-       </li>
-     </ul>
-   </nav>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-   <!-- Instead of section and article, many developers use the div tag. -->
-   <section>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
 
-     <article>
-       <h2>Basic Light Switch</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/standard_switch.jpg" width="150" height="200" alt="Standard Switch JPG" /> </td>
-                <td>An excellent utility light switch 
-                with long standing durability and an 
-                immense ease of use. Only downside is 
-                its protrusion may cause unintentional 
-                injuries if pressed upon incorrectly.
-                <br>
-                <br>
-                9/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
-       
-       <h2>Rocker Light Switch</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/rocker_switch.jpg" width="150" height="200" alt="Rocker Switch JPG" /></td>
-                <td>Still rather elegant in practicality,
-                and a worthy purchase for those who find
-                more satisfaction in a button than a lever.
-                However, it can be much harder to tell whether
-                the switch is in the "on" or "off" position
-                from a distance.
-                <br>
-                <br>
-                7/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
-       
-       <h2>Slide Switch</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/standard_slide_switch.jpg" width="150" height="200" alt="Slide Switch JPG" /></td>
-                <td>These switches may differ whether sliding 
-                the switch doubles as a dimmer, or if it's a
-                simple on/off switch. Either way, it causes undue
-                difficulties in turning the light all the way
-                on or all the way off on a whim.
-                <br>
-                <br>
-                5/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
-       
-       <h2>Dimmer Slide Switch</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/standard_switch_dimmer_slide.jpg" width="150" height="200" alt="Dimmer Slide Switch JPG" /></td>
-                <td>This version comes pre-equipped with a more
-                typical switch coupled with the dimmer slide.
-                Very nice addition that fixes the major gripe
-                with the previous iteration, creating possibly
-                the strongest switch on the market.
-                <br>
-                <br>
-                10/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
 
-       <h2>Switch with Power Outlet</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/switch_with_outlet.jpg" width="150" height="200" alt="Switch with Power Outlet JPG" /></td>
-                <td>This version comes with a built in power outlet, so you can plug in anything you'd imagine, including additional light sources!
-                  The power outlet itself can be quite dangerous though, potentially leading to electrocution.
-                <br>
-                <br>
-                8/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
-       
-       <h2>Motion Sensor Switch</h2>
-       <table>
-        <tbody>
-            <tr>
-                <td> <img src="pictures/motion_switch.jpg" width="150" height="200" alt="Motion Switch JPG" /></td>
-                <td>An abomination.
-                <br>
-                <br>
-                0/10
-                </td>
-            </tr>
-        </tbody>
-       </table>
-       
-     </article>
-   </section>
-   <hr>
-   <footer>
-       NLSAA - Cabot Brothers &copy; 2019
-   </footer>
- </body>
+          <li class="nav-item">
+            <a class="nav-link" href="how_to.html">How To Use a Light Switch</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="vendors.html">Vendors</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Reviews <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contractors.html">Contractors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+      		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+      		<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    		</form>
+      </div>
+    </nav>
+
+    <div class="container">
+	   	<section>
+	     	<article>
+	       	<h2>Basic Light Switch</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/standard_switch.jpg" width="150" height="200" alt="Standard Switch JPG" /> </td>
+	              <td>An excellent utility light switch 
+	              with long standing durability and an 
+	              immense ease of use. Only downside is 
+	              its protrusion may cause unintentional 
+	              injuries if pressed upon incorrectly.
+	              <br>
+	              <br>
+	              9/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+	       
+	       	<h2>Rocker Light Switch</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/rocker_switch.jpg" width="150" height="200" alt="Rocker Switch JPG" /></td>
+	              <td>Still rather elegant in practicality,
+	              and a worthy purchase for those who find
+	              more satisfaction in a button than a lever.
+	              However, it can be much harder to tell whether
+	              the switch is in the "on" or "off" position
+	              from a distance.
+	              <br>
+	              <br>
+	              7/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+	       
+	       	<h2>Slide Switch</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/standard_slide_switch.jpg" width="150" height="200" alt="Slide Switch JPG" /></td>
+	              <td>These switches may differ whether sliding 
+	              the switch doubles as a dimmer, or if it's a
+	              simple on/off switch. Either way, it causes undue
+	              difficulties in turning the light all the way
+	              on or all the way off on a whim.
+	              <br>
+	              <br>
+	              5/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+	       
+	       	<h2>Dimmer Slide Switch</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/standard_switch_dimmer_slide.jpg" width="150" height="200" alt="Dimmer Slide Switch JPG" /></td>
+	              <td>This version comes pre-equipped with a more
+	              typical switch coupled with the dimmer slide.
+	              Very nice addition that fixes the major gripe
+	              with the previous iteration, creating possibly
+	              the strongest switch on the market.
+	              <br>
+	              <br>
+	              10/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+
+	       	<h2>Switch with Power Outlet</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/switch_with_outlet.jpg" width="150" height="200" alt="Switch with Power Outlet JPG" /></td>
+	              <td>This version comes with a built in power 
+	              outlet, so you can plug in anything you'd imagine, 
+	              including additional light sources! The power outlet 
+	              itself can be quite dangerous though, potentially 
+	              leading to electrocution.
+	              <br>
+	              <br>
+	              8/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+	       
+	       	<h2>Motion Sensor Switch</h2>
+	       	<table>
+	        	<tbody>
+	            <tr>
+	              <td><img src="pictures/motion_switch.jpg" width="150" height="200" alt="Motion Switch JPG" /></td>
+	              <td>An abomination.
+	              <br>
+	              <br>
+	              0/10
+	              </td>
+	            </tr>
+	        	</tbody>
+	       	</table>
+	     	</article>
+	   	</section>
+
+	   	<hr>
+	   	<footer>
+	      NLSAA - Cabot Brothers &copy; 2019
+	   	</footer>
+	  </div>
+
+	  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 	</body>
 </html>

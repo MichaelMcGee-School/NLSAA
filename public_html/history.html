@@ -1,101 +1,125 @@
 <!DOCTYPE html>
 
 <html lang="en">
- <head>
-   <meta charset="utf-8">
-   <title>NLSAA - History</title>
-   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
- </head>
+ 	<head>
+   	<meta charset="utf-8">
+   	<title>NLSAA - History</title>
+   	<!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
- <body>
-     <header>
-         <h1>National Light Switch Appreciation Association</h1>
-         <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-         <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
-     </header>
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
+ 	</head>
+
+ 	<body>
+    <header>
+      <h1>National Light Switch Appreciation Association</h1>
+      <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+      <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    </header>
     
-   <nav>
-     <ul>
-       <li>
-         <a href="index.html">Home Page</a>
-       </li>
+   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NLSAA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-       <li>
-         <a href="about.html">About</a>
-       </li>
+      <div class="collapse navbar-collapse" id="navbarColor02">
 
-       <li>
-         <a class="active" href="history.html">History</a>
-       </li>
-      
-       <li>
-         <a href="how_to.html">How To Use a Light Switch</a>
-       </li>
-      
-       <li>
-         <a href="vendors.html">Vendors</a>
-       </li>
-      
-       <li>
-         <a href="reviews.html">Reviews</a>
-       </li>
-      
-       <li>
-         <a href="contractors.html">Contractors</a>
-       </li>
-      
-       <li>
-         <a href="gallery.html">Gallery</a>
-       </li>
-      
-       <li>
-         <a href="contact.html">Contact Us</a>
-       </li>
-     </ul>
-   </nav>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
 
-   <!-- Instead of section and article, many developers use the div tag. -->
-   <section>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
 
-     <article>
-       <h2>The original light switch</h2>
-       <p>We actually don't know who was the original inventor of the light
-       switch was. But rest assured our scholars (AKA Harold) are hard at work
-       finding the answer.</p>
-       <p>**Harold's note: No I'm not.</p>
-     </article>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">History <span class="sr-only">(current)</span></a>
+          </li>
 
-     <article>
-       <h2>The inventor of the <em>improved</em> light switch</h2>
-       <p>John Henry Holmes created the new and improved design for the light
-       switch which is still used to some extent today. He was the inventor of
-       the "quick-break technology" that prevented electrical arcing when turning
-       the light on and off, drastically increasing the longevity of both the
-       switch and the bulb.</p>
-     </article>
-     
-     <article>
-       <h2>The abomination that is automated electronic switches</h2>
-       <p>Recent "developments" have resulted in the creation of a variety of
-       automated systems that dare to replace the usage of traditional light
-       switches. Take for example, motion sensor switches. For starters, if you
-       hold still in a room for too long, you have to shimmy around until the
-       lights come back on. A drastic inconvenience. Furthermore, the remove any
-       sense of punctuation that accompanies entering and exiting a room with the
-       flick of a light switch. Worse yet are auditory light switches, which turn
-       the lights on and off at the clap of your hands. This is outrageous.
-       Demanding that a person clap their hands loud enough that the installed
-       microphones can hear it can potentially cause palm injuries, one of the
-       very same injuries light switches are put in place to avoid.</p>
-     </article>
-     
-     Source: <a href="https://en.wikipedia.org/wiki/Light_switch">Just Wikipedia</a><hr>
-     
-   </section>
-   <hr>
-   <footer>
-       NLSAA - Cabot Brothers &copy; 2019
-   </footer>
- </body>
+          <li class="nav-item">
+            <a class="nav-link" href="how_to.html">How To Use a Light Switch</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="vendors.html">Vendors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contractors.html">Contractors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+      		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+      		<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    		</form>
+      </div>
+    </nav>
+    <div class="container">
+	   	<section>
+	     	<article>
+	       	<h2>The original light switch</h2>
+	       	<p>We actually don't know who was the original inventor of the light
+	       	switch was. But rest assured our scholars (AKA Harold) are hard at work
+	       	finding the answer.</p>
+	       	<p>**Harold's note: No I'm not.</p>
+	     	</article>
+
+	     	<article>
+	       	<h2>The inventor of the <em>improved</em> light switch</h2>
+	       	<p>John Henry Holmes created the new and improved design for the light
+	       	switch which is still used to some extent today. He was the inventor of
+	       	the "quick-break technology" that prevented electrical arcing when turning
+	       	the light on and off, drastically increasing the longevity of both the
+	       	switch and the bulb.</p>
+	     	</article>
+	     
+	     	<article>
+	       	<h2>The abomination that is automated electronic switches</h2>
+	       	<p>Recent "developments" have resulted in the creation of a variety of
+	       	automated systems that dare to replace the usage of traditional light
+	       	switches. Take for example, motion sensor switches. For starters, if you
+	       	hold still in a room for too long, you have to shimmy around until the
+	       	lights come back on. A drastic inconvenience. Furthermore, the remove any
+	       	sense of punctuation that accompanies entering and exiting a room with the
+	       	flick of a light switch. Worse yet are auditory light switches, which turn
+	       	the lights on and off at the clap of your hands. This is outrageous.
+	       	Demanding that a person clap their hands loud enough that the installed
+	       	microphones can hear it can potentially cause palm injuries, one of the
+	       	very same injuries light switches are put in place to avoid.</p>
+	     	</article>
+	     
+	     	Source: <a href="https://en.wikipedia.org/wiki/Light_switch"><button type="button" class="btn btn-info btn-small">Just Wikipedia</button></a><hr>
+	   	</section>
+
+	   	<hr>
+	   	<footer>
+	      NLSAA - Cabot Brothers &copy; 2019
+	   	</footer>
+   	</div>
+
+   	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 	</body>
 </html>

@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 
 <html lang="en">
- <head>
-   <meta charset="utf-8">
-   <title>NLSAA - Home Page</title>
-   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-   <style>
-      h2 {
-        text-align: center;
-        text-shadow: 2px 2px #B34400;
-        font-size: 32px;
-      }
-      form {
-        text-align: center;
-      }
-   </style>
- </head>
- <body>
-	 <header>
-		 <h1 style="text-decoration-line: underline; text-decoration-style: wavy;">
-        National Light Switch Appreciation Association
-      </h1>
-		 <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-		 <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
-	 </header>
-   <nav>
-     <ul>
-       <li>
-         <a class="active" href="index.html">Home Page</a>
-       </li>
+  <head>
+    <meta charset="utf-8">
+    <title>NLSAA - Home Page</title>
+    <!-- This says our CSS is compatible with phones, and phones
+         don't need to scale it strangely. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       <li>
-         <a href="about.html">About</a>
-       </li>
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-       <li>
-         <a href="history.html">History</a>
-       </li>
-      
-       <li>
-         <a href="how_to.html">How To Use a Light Switch</a>
-       </li>
-      
-       <li>
-         <a href="vendors.html">Vendors</a>
-       </li>
-      
-       <li>
-         <a href="reviews.html">Reviews</a>
-       </li>
-      
-       <li>
-         <a href="contractors.html">Contractors</a>
-       </li>
-      
-       <li>
-         <a href="gallery.html">Gallery</a>
-       </li>
-      
-       <li>
-         <a href="contact.html">Contact Us</a>
-       </li>
-     </ul>
-   </nav>
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
+  </head>
 
-   <section>
+  <body>
+    <header>
+      <h1>National Light Switch Appreciation Association</h1>
+		  <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+		  <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    </header>
 
-     <article>
-       <h2>Behind every light is an <em>even greater</em> light switch.</h2>
-       <p>Here at the NLSAA we believe that light switches 
-       deserve far more recognition than they currently get.
-       We would like to start by thanking the great men and
-       women who have contributed to the development of this
-       great creation. For without it, our lights would either
-       be on or off at all moments, forever, either constantly
-       wasting power or being pathetically useless.</p>
-     </article>
-     <article>
-       <h2>Eliminating the darkness in our world when we <em>really</em> need it.</h2>
-       <p>Light switches allow us to illuminate the eternal night
-       that consumes all enclosures at a simple flick of the wrist.
-       The invention of the light switch has contributed to the
-       lessening of personal injuries in dark spaces. However, it 
-       leaves the option to keep the lights off either during the day,
-       or when we would rather go to sleep, where personal injuries
-       are significantly less likely.</p>
-     </article>
-     <article>
-      <h2>Log in</h2>
-        <form>
-          Username: <input type="text" name="First Name" required maxlength="15"><br><br>
-          Password: <input type="Password" name="Last Name" required maxlength="20"><br><br>
-          <input type="submit" name="Submit" value="Log in">
-        </form>
-      </article>
-   </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NLSAA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-   <hr>
-   <footer>
-       NLSAA - Cabot Brothers &copy; 2019
-   </footer>
- </body>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="how_to.html">How To Use a Light Switch</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="vendors.html">Vendors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contractors.html">Contractors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+      		<input class="form-control mr-sm-2" type="text" placeholder="Search">
+      		<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    		</form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section>
+        <article>
+          <h2>Behind every light is an <em>even greater</em> light switch.</h2>
+          <p>Here at the NLSAA we believe that light switches 
+          deserve far more recognition than they currently get.
+          We would like to start by thanking the great men and
+          women who have contributed to the development of this
+          great creation. For without it, our lights would either
+          be on or off at all moments, forever, either constantly
+          wasting power or being pathetically useless.</p>
+        </article>
+        <article>
+          <h2>Eliminating the darkness in our world when we <em>really</em> need it.</h2>
+          <p>Light switches allow us to illuminate the eternal night
+          that consumes all enclosures at a simple flick of the wrist.
+          The invention of the light switch has contributed to the
+          lessening of personal injuries in dark spaces. However, it 
+          leaves the option to keep the lights off either during the day,
+          or when we would rather go to sleep, where personal injuries
+          are significantly less likely.</p>
+        </article>
+        <article>
+          <h2>Log in</h2>
+            <form>
+              Username: <input type="text" name="First Name" required maxlength="15"><br>
+              Password: <input type="Password" name="Last Name" required maxlength="20"><br>
+              <button type="submit" class="btn btn-secondary">Log in</button>
+            </form>
+        </article>
+      </section>
+
+      <hr>
+      <footer>
+        NLSAA - Cabot Brothers &copy; 2019
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
