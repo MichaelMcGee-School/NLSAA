@@ -16,10 +16,16 @@
   </head>
 
   <body>
-    <header>
-      <h1>National Light Switch Appreciation Association</h1>
-		  <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-		  <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    <header class="row justify-content-center">
+    	<div class="col-auto">
+    		<h1>National Light Switch Appreciation Association</h1>
+    	</div>
+    	<div class="col-auto">
+    		<img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+    	</div>
+    	<div class="col-auto">
+    		<img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    	</div> 
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -76,36 +82,52 @@
 
     <div class="container">
       <section>
-        <article>
-          <h2>Behind every light is an <em>even greater</em> light switch.</h2>
-          <p>Here at the NLSAA we believe that light switches 
+      	<br>
+      	<div class="alert alert-dismissible alert-info">
+				  <button type="button" class="close" data-dismiss="alert">&times;</button>
+				  <p class="mb-0">Heads up! This site likes <a href="https://en.wikipedia.org/wiki/Cookie" class="alert-link">cookies</a>.</p>
+				</div>
+      	<div class="jumbotron">
+				  <h2 class="display-4">Behind every light is an <em>even greater</em> light switch.</h2>
+				  <p class="lead">Here at the NLSAA we believe that light switches 
           deserve far more recognition than they currently get.
           We would like to start by thanking the great men and
           women who have contributed to the development of this
           great creation. For without it, our lights would either
           be on or off at all moments, forever, either constantly
           wasting power or being pathetically useless.</p>
-        </article>
-        <article>
-          <h2>Eliminating the darkness in our world when we <em>really</em> need it.</h2>
-          <p>Light switches allow us to illuminate the eternal night
+				  <hr class="my-4">
+				  <h2 class="display-4">Eliminating the darkness in our world when we <em>really</em> need it.</h2>
+          <p class="lead">Light switches allow us to illuminate the eternal night
           that consumes all enclosures at a simple flick of the wrist.
           The invention of the light switch has contributed to the
           lessening of personal injuries in dark spaces. However, it 
           leaves the option to keep the lights off either during the day,
           or when we would rather go to sleep, where personal injuries
           are significantly less likely.</p>
-        </article>
-        <article>
-          <h2>Log in</h2>
-            <form>
-              Username: <input type="text" name="First Name" required maxlength="15"><br>
-              Password: <input type="Password" name="Last Name" required maxlength="20"><br>
-              <button type="submit" class="btn btn-secondary">Log in</button>
-            </form>
-        </article>
+				  <p class="lead">
+				    <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+				  </p>
+				</div>
+        <div class="row justify-content-center">
+        	<div class="col-md-3">
+        		<form>
+		          <fieldset>
+		          	<legend>Log in</legend>
+		          	<div class="form-group">
+									<label for=inputUsername>Username</label>
+									<input type="text" class="form-control" name="Username" id="inputUsername" placeholder="Username" required maxlength="15">
+		          	</div>
+		          	<div class="form-group">
+		          		<label for=inputPassword>Password</label>
+									<input type="Password" class="form-control" name="Password" id="inputPassword" placeholder="Password" required minlength="8" maxlength="20">
+		          	</div>
+		            <button type="submit" class="btn btn-secondary">Log in</button>
+		          </fieldset>
+		        </form>
+        	</div>
+        </div>
       </section>
-
       <hr>
       <footer>
         NLSAA - Cabot Brothers &copy; 2019

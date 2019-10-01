@@ -16,10 +16,16 @@
  	</head>
 
  	<body>
-    <header>
-      <h1>National Light Switch Appreciation Association</h1>
-      <img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-      <img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    <header class="row justify-content-center">
+    	<div class="col-auto">
+    		<h1>National Light Switch Appreciation Association</h1>
+    	</div>
+    	<div class="col-auto">
+    		<img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+    	</div>
+    	<div class="col-auto">
+    		<img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    	</div> 
     </header>
     
    	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -74,25 +80,25 @@
       </div>
     </nav>
     <div class="container">
-	   	<section>
-	     	<article>
+	   	<div class="row">
+	     	<div class="col-md-4">
 	       	<h2>The original light switch</h2>
 	       	<p>We actually don't know who was the original inventor of the light
 	       	switch was. But rest assured our scholars (AKA Harold) are hard at work
 	       	finding the answer.</p>
 	       	<p>**Harold's note: No I'm not.</p>
-	     	</article>
+	     	</div>
 
-	     	<article>
+	     	<div class="col-md-4">
 	       	<h2>The inventor of the <em>improved</em> light switch</h2>
 	       	<p>John Henry Holmes created the new and improved design for the light
 	       	switch which is still used to some extent today. He was the inventor of
 	       	the "quick-break technology" that prevented electrical arcing when turning
 	       	the light on and off, drastically increasing the longevity of both the
 	       	switch and the bulb.</p>
-	     	</article>
+	     	</div>
 	     
-	     	<article>
+	     	<div class="col-md-4">
 	       	<h2>The abomination that is automated electronic switches</h2>
 	       	<p>Recent "developments" have resulted in the creation of a variety of
 	       	automated systems that dare to replace the usage of traditional light
@@ -105,10 +111,14 @@
 	       	Demanding that a person clap their hands loud enough that the installed
 	       	microphones can hear it can potentially cause palm injuries, one of the
 	       	very same injuries light switches are put in place to avoid.</p>
-	     	</article>
-	     
-	     	Source: <a href="https://en.wikipedia.org/wiki/Light_switch"><button type="button" class="btn btn-info btn-small">Just Wikipedia</button></a><hr>
-	   	</section>
+	     	</div>
+	     	<form>
+		     	</div class="form-group">
+			     	<label for="sourceButton">Source:</label>
+			     	<a href="https://en.wikipedia.org/wiki/Light_switch"><button type="button" id="sourceButton" class="btn btn-info btn-small">Just Wikipedia</button></a><hr>
+			    </div>
+		    <form>
+	   	</div>
 
 	   	<hr>
 	   	<footer>

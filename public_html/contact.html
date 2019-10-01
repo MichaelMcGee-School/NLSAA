@@ -16,11 +16,17 @@
  	</head>
 
 	<body>
-		<header>
-			<h1>National Light Switch Appreciation Association</h1>
-			<img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-			<img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
-		</header>
+		<header class="row justify-content-center">
+    	<div class="col-auto">
+    		<h1>National Light Switch Appreciation Association</h1>
+    	</div>
+    	<div class="col-auto">
+    		<img id="switchy" src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+    	</div>
+    	<div class="col-auto">
+    		<img id="bulby" src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+    	</div> 
+    </header>
 		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">NLSAA</a>
@@ -75,23 +81,39 @@
     </nav>
 
     <div class="container">
-		  <section> 
+		  <section>
 		    <article>
 				  <h2>Send any fan mail to this address.</h2>
 				  <p>NLSAA<br>606 Rockledge Drive<br>Ottawa, IL 61350		   </p>
 			 	</article>
-			 
-				<article>
-					<h2>Fill the fields below to contact us by email.</h2>
-					<form>
-						First Name: <input type="text" name="First Name" required maxlength="15"><br>
-						Last Name: <input type="text" name="Last Name" required maxlength="20"><br>
-						Email: <input type="email" name="Email Address" required maxlength="50"><br>
-						Message: <input type="text" name="Message" maxlength="300"><br>
-						<button type="submit" class="btn btn-secondary">Submit</button>
-					</form>
-				</article>
-		  </section>
+	 			<div class="row justify-content-center">
+				 	<div class="col-md-4">
+						<form>
+							<fieldset>
+								<legend>Contact Us</legend>
+								<div class="form-group">
+									<label for=inputFirstName>First Name</label>
+									<input type="text" class="form-control" name="First Name" id="inputFirstName" placeholder="Enter your first name" required maxlength="15">
+								</div>
+								<div class="form-group">
+									<label for=inputLastName>Last Name</label>
+									<input type="text" class="form-control" name="Last Name" id="inputLastName" placeholder="Enter your last name" required maxlength="20">
+								</div>
+								<div class="form-group">
+									<label for="inputEmail">Email</label>
+	      					<input type="email" class="form-control" name="Email Address" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter your email" required maxlength="50">
+	      					<small id="emailHelp" class="form-text text-muted">We won't share your email.</small>
+								</div>
+								<div class="form-group">
+									<label for=inputMessage>Message</label>
+									<textarea class="form-control" name="Message" id="inputMessage" required maxlength="300" rows="3"></textarea>
+								</div>
+								<button type="submit" class="btn btn-secondary">Submit</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+	  </section>
 
 		  <hr>
 		  <footer>
