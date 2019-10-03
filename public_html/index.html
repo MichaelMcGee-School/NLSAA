@@ -4,32 +4,80 @@
  <head>
    <meta charset="utf-8">
    <title>NLSAA - Home Page</title>
-   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css">
+   <style>
+    .container {
+      margin: 5px;
+      padding: 3px;
+    }
+  </style>
  </head>
  <body>
-     <nav>
-     <ul>
-      <li><a class="active" href="index.html">Home Page</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="history.html">History</a></li>
-       <li><a href="how_to.html">How To Use a Light Switch</a></li>
-       <li><a href="vendors.html">Vendors</a></li>
-       <li><a href="reviews.html">Reviews</a></li>
-       <li><a href="contractors.html">Contractors</a></li>
-       <li><a href="gallery.html">Gallery</a></li>
-       <li><a href="contact.html">Contact Us</a></li>
-     </ul>
-   </nav>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">NLSAA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home Page <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="how_to.html">How To Use a Light Switch</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="vendors.html">Vendors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contractors.html">Contractors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="alert alert-dismissible alert-warning">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4 class="alert-heading">Warning!</h4>
+  <p class="mb-0">We'd like to warn you about something, but theres really not anything to warn you about right now, so just close this and move along.</p>
+</div>
 	 <header>
-		 <h1 style="font-size:40px;">National Light Switch Appreciation Association</h1>
+		 <h1>National Light Switch Appreciation Association</h1>
 		 <img src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
 		 <img src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
 	 </header>
 
-   <section>
+   <div class="row container">
 
-     <article>
-       <h2>Behind every light is an <em>even greater</em> light switch.</h2>
+     <div class="col-12 col-md-6">
+       <h2 style="text-align: center;">Behind every single light is an <em>even greater</em> light switch.</h2>
        <p>Here at the NLSAA we believe that light switches 
        deserve far more recognition than they currently get.
        We would like to start by thanking the great men and
@@ -37,9 +85,9 @@
        great creation. For without it, our lights would either
        be on or off at all moments, forever, either constantly
        wasting power or being pathetically useless.</p>
-     </article>
-     <article>
-       <h2>Eliminating the darkness in our world when we <em>really</em> need it.</h2>
+     </div>
+     <div class="col-12 col-md-6">
+       <h2 style="text-align: center;">Eliminating the darkness in our world when we <em>really</em> need it.</h2>
        <p>Light switches allow us to illuminate the eternal night
        that consumes all enclosures at a simple flick of the wrist.
        The invention of the light switch has contributed to the
@@ -47,14 +95,14 @@
        leaves the option to keep the lights off either during the day,
        or when we would rather go to sleep, where personal injuries
        are significantly less likely.</p>
-     </article>
-	 
-	 <p>This text will replace the other text in a merge conflict</p>
-	 
-   </section>
+     </div>
+   </div>
    <hr>
-   <footer>
+   <footer style="text-align:center;">
        NLSAA - Cabot Brothers &copy; 2019
    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  </body>
 </html>

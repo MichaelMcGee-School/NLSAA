@@ -4,35 +4,79 @@
  <head>
    <meta charset="utf-8">
    <title>NLSAA - Reviews</title>
-   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css">
+   <style>
+    .container {
+      margin: 5px;
+      padding: 3px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
  </head>
-
  <body>
-    <nav>
-     <ul>
-      <li><a href="index.html">Home Page</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="history.html">History</a></li>
-       <li><a href="how_to.html">How To Use a Light Switch</a></li>
-       <li><a href="vendors.html">Vendors</a></li>
-       <li><a class="active" href="reviews.html">Reviews</a></li>
-       <li><a href="contractors.html">Contractors</a></li>
-       <li><a href="gallery.html">Gallery</a></li>
-       <li><a href="contact.html">Contact Us</a></li>
-     </ul>
-   </nav>
-     <header>
-         <h1>National Light Switch Appreciation Association</h1>
-         <img src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
-         <img src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
-     </header>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">NLSAA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-   <!-- Instead of section and article, many developers use the div tag. -->
-   <section>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home Page </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="how_to.html">How To Use a Light Switch</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="vendors.html">Vendors</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="reviews.html">Reviews <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contractors.html">Contractors</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+   <header>
+     <h1>National Light Switch Appreciation Association</h1>
+     <img src="pictures/switchy.png" width="80" height="80" alt="Switchy the Switch" />
+     <img src="pictures/bulby.png" width="80" height="80" alt="Bulby the Bulb" />
+   </header>
 
      <article>
+      <div class="form-row">
+        <div class="col-4">
        <h2>Basic Light Switch</h2>
-       <table>
+       <table class="table table-active">
         <tbody>
             <tr>
                 <td> <img src="pictures/standard_switch.jpg" width="150" height="200" alt="Standard Switch JPG" /> </td>
@@ -48,9 +92,10 @@
             </tr>
         </tbody>
        </table>
-       
+       </div>
+       <div class="col-4">
        <h2>Rocker Light Switch</h2>
-       <table>
+       <table class="table table-active">
         <tbody>
             <tr>
                 <td> <img src="pictures/rocker_switch.jpg" width="150" height="200" alt="Rocker Switch JPG" /></td>
@@ -67,9 +112,10 @@
             </tr>
         </tbody>
        </table>
-       
+     </div>
+        <div class="col-4">
        <h2>Slide Switch</h2>
-       <table>
+       <table class="table table-active">
         <tbody>
             <tr>
                 <td> <img src="pictures/standard_slide_switch.jpg" width="150" height="200" alt="Slide Switch JPG" /></td>
@@ -85,9 +131,12 @@
             </tr>
         </tbody>
        </table>
-       
+     </div>
+     </div>
+       <div class="form-row">
+        <div class="col-6">
        <h2>Dimmer Slide Switch</h2>
-       <table>
+       <table class="table table-active">
         <tbody>
             <tr>
                 <td> <img src="pictures/standard_switch_dimmer_slide.jpg" width="150" height="200" alt="Dimmer Slide Switch JPG" /></td>
@@ -103,9 +152,10 @@
             </tr>
         </tbody>
        </table>
-       
+     </div>
+       <div class="col-6">
        <h2>Motion Sensor Switch</h2>
-       <table>
+       <table class="table table-active">
         <tbody>
             <tr>
                 <td> <img src="pictures/motion_switch.jpg" width="150" height="200" alt="Motion Switch JPG" /></td>
@@ -117,12 +167,16 @@
             </tr>
         </tbody>
        </table>
+     </div>
+   </div>
        
      </article>
-   </section>
    <hr>
-   <footer>
+   <footer style="text-align:center;">
        NLSAA - Cabot Brothers &copy; 2019
    </footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  </body>
 </html>
